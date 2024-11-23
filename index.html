@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="centered">
+        <p>Loading...</p>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Love Question Screen -->
+    <div id="love-screen" class="hidden">
+        <img src="assets/couple.jpg" alt="Couple" class="couple-img">
+        <h1>Do you love me?</h1>
+        <button id="love-button">รัก</button>
+        <button id="no-love-button">ไม่รัก</button>
+    </div>
+
+    <!-- Second Confirmation Screen -->
+    <div id="second-confirmation-screen" class="hidden">
+        <h1>รักเค้าจริงๆหรอ แน่ใจไหม?</h1>
+        <button class="confirm-button" id="sure-button">แน่ใจ</button>
+        <button class="confirm-button" id="unsure-button">ไม่แน่ใจ</button>
+    </div>
+
+    <!-- "ไม่รักเค้าจริงนิหน่า นอยส์" Screen -->
+    <div id="no-love-screen" class="hidden">
+        <h1>ไม่รักเค้าจริงนิหน่า นอยส์</h1>
+        <button class="confirm-button" id="pout-button">งอน</button>
+    </div>
+
+    <!-- Final Screen -->
+    <div id="final-screen" class="hidden">
+        <h1>Happy 3rd Month Anniversary 🌸</h1>
+        <img src="assets/flower.gif" alt="Flower" class="flower">
+        <!-- ข้อความในกรอบ -->
+        <div class="message-box">
+            <p>สุขสันต์วันครบรอบนะค้าบบ รักมี้มากๆนะค้าบบ อยู่ด้วยกันแบบนี้ไปนานๆนะค้าบบ จับมือกันเดินไม่ปล่อยมือไปไหนนะค้าบ ขอโทษที่อาจจะทำสิ่งที่ไปดี ทำตัวไม่ดี 
+                ทำให้ที่รักเสียน้ำตาตลอด ให้อภัยเค้านะค้าบบ สัญญาว่าจะทำตัวให้ดีขึ้น ไม่ให้ที่รักได้เสียน้ำตานะ รักนะค้าบ อ้วนของเค้า❤️</p>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" src="assets/bg-music.mp3"></audio>
+    <audio id="love-music" src="assets/bg-music.mp3"></audio>
+    <audio id="final-music" src="assets/bg-music.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

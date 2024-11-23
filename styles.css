@@ -1,0 +1,140 @@
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f0;
+    color: #ff69b4;
+    text-align: center;
+    height: 100vh; /* ให้ body ครอบคลุมทั้งหน้าจอ */
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+    flex-direction: column; /* จัดเรียงองค์ประกอบในแนวตั้ง */
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Centered Content */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+/* Loading Bar */
+.loading-bar {
+    position: relative;
+    width: 80%;
+    height: 10px;
+    background-color: #ffd1dc;
+    border-radius: 5px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.loading-progress {
+    width: 0%;
+    height: 100%;
+    background-color: #ff69b4;
+    animation: load 5s linear forwards;
+    border-radius: 5px;
+}
+
+/* Keyframe for Loading */
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Image Styling */
+.couple-img,
+.flower {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design for Mobile and Tablets */
+@media (max-width: 768px) {
+    .centered {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .couple-img, .flower {
+        width: 70%;
+        max-width: 250px;
+    }
+
+    .loading-bar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .couple-img, .flower {
+        width: 60%;
+        max-width: 200px;
+    }
+
+    .loading-bar {
+        width: 95%;
+    }
+}
+
+#final-screen .message-box {
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #fff0f6;
+    border: 2px solid #ff99cc;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    text-align: left;
+}
